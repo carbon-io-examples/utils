@@ -5,7 +5,7 @@ A set of utility script for managing the examples.
 ## Prerequisites
 
 - [jq](https://stedolan.github.io/jq/): `brew install jq`
-- [package-merge](https://www.npmjs.com/package/package-merge): `npm i -g package-merge`
+- [package-json-merge](https://www.npmjs.com/package/package-json-merge): `npm i -g package-json-merge`
 - [spread](https://github.com/tfogo/spread): `brew install tfogo/tools/spread`
 
 ## Download all examples
