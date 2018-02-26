@@ -52,3 +52,9 @@ Most bulk updates are to the READMEs.
 ```
 sed -i "" -e "s/io-0\.7/io-0.8/g" README.md
 ```
+
+Simply list success or fail for tests:
+
+```
+spread 'pwd && npm test &> /dev/null && echo "Success\n" || echo "Fail\n"'
+```
