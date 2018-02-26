@@ -31,12 +31,18 @@ Optionally, link any modules for testing, e.g. `npm link @carbon-io/carbond`.
 spread 'npm test'
 ```
 
-## Run commands based on test results
-
-Spread will run commands in sequence on each subdirectory. If any command in the sequence fails, the rest of the commands will not run. Therefore, you can run commands based on the exit code of tests:
+You can run in specific directories by passing them as arguments after the command to spread:
 
 ```
-spread 'npm test' 'git checkout -b new-branch && git push origin new-branch'
+spread 'npm test' example*
+```
+
+## Run commands based on test results with spread
+
+For example, committing and pushing if tests are passed:
+
+```
+spread 'npm test && git checkout -b new-branch && git push origin new-branch'
 ```
 
 ## Useful commands
