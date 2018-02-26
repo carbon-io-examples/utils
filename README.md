@@ -19,7 +19,7 @@ curl https://api.github.com/orgs/carbon-io-examples/repos\?per_page\=200 | jq -r
 This will merge together all the examples' `package.json`s and install the modules in the parent folder. That way you only need to install the modules for each example once.
 
 ```
-ls */package.json | xargs package-merge > package.json
+ls */package.json | xargs package-json-merge > package.json
 npm i
 ```
 
